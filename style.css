@@ -1,0 +1,94 @@
+ @import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+*, 
+*::before, 
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.bold {
+    font-weight: 700;
+    color: hsl(229, 23%, 23%);
+    padding: 0 0.5rem 0;
+}
+
+.container {
+    background-color:  hsl(185, 75%, 39%);
+    background-image: url(./images/bg-pattern-top.svg),
+                    url(./images/bg-pattern-bottom.svg);
+    background-position: 0% 150%, 100% -50%;
+    background-repeat: no-repeat;
+    background-size: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    
+}
+
+.card {
+    background-color: white;
+    width: 350px; 
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+.person {
+    font-family: 'Kumbh Sans', sans-serif;
+    color: hsl(227, 10%, 46%);
+    text-align: center;
+}
+    
+    
+
+.person__picture {
+    --border-width: 5px;
+    display: block;
+    width: calc(96px + var(--border-width));
+    height: calc(96px + var(--border-width));
+    margin-inline: auto;
+    border: var(--border-width) solid white;
+    border-radius: 100vw;
+    transform: translateY(-50%)
+}
+
+.person__details {
+    margin-top: -2rem;
+}
+
+.person__details-location {
+    display: block;
+    font-size: 0.9rem;
+    padding-top: 1rem;
+}
+
+.person__details::after {
+    content: "";
+    background-color: hsl(0, 0%, 59%);
+    opacity: 0.5;
+    height: 1px;
+    display: block;
+    margin-block: 1.5rem;
+}
+.person__stats {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    font-size: 0.75rem;
+    letter-spacing: 0.1rem;
+    
+}
+
+
+
+.person__stats-item > span {
+    display: block;
+    font-size: 1rem;
+    letter-spacing: normal;
+}
+
